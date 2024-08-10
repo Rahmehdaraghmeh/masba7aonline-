@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url('./image/SpongeBob_SquarePants_Mr_Krabs.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* تأكد من أن الخلفية ثابتة وتغطي كامل الشاشة */
+    font-family: 'Roboto', sans-serif;
+}
+
+.honee {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #da3333;
+    transition: color 0.3s ease;
+}
+
+.tasbeeh-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* تأكد من أن الحاوية تمتد على العرض الكامل */
+}
+
+.tasbeeh-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tasbeeh-option span {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .honee {
+        font-size: 1.5rem;
+        /* ضبط حجم الخط للعناوين في الشاشات الصغيرة */
+    }
+    .tasbeeh-option {
+        width: 150px;
+        /* تقليل عرض العناصر على الشاشات الصغيرة */
+        font-size: 1rem;
+        /* تقليل حجم الخط في العناصر */
+    }
+}
